@@ -35,6 +35,9 @@
 #elif defined(LPC43XX_M0)
 #	include "../lpc43xx/m0/vector_nvic.c"
 
+#elif defined(K20DX)
+#	include "../k20dx/vector_nvic.c"
+
 #elif defined(SAM3A)
 #	include "../sam/3a/vector_nvic.c"
 #elif defined(SAM3N)

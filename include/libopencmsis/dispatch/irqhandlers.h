@@ -29,6 +29,9 @@
 #elif defined(LPC43XX_M0)
 #       include <libopencmsis/lpc43xx/m0/irqhandlers.h>
 
+#elif defined(K20DX)
+#       include <libopencmsis/k20dx/irqhandlers.h>
+
 #elif defined(SAM3A)
 #       include <libopencmsis/sam/3a/irqhandlers.h>
 #elif defined(SAM3N)

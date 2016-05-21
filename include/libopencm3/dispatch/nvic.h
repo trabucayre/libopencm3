@@ -39,6 +39,9 @@
 #elif defined(LPC43XX_M0)
 #	include <libopencm3/lpc43xx/m0/nvic.h>
 
+#elif defined(K20DX)
+#	include <libopencm3/k20dx/nvic.h>
+
 #elif defined(SAM3A)
 #	include <libopencm3/sam/3a/nvic.h>
 #elif defined(SAM3N)
