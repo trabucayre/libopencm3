@@ -7,6 +7,7 @@ ARCHS := stm32f0 stm32f1 stm32f2 stm32f3 stm32f4 stm32f7
 ARCHS += stm32l0 stm32l1 stm32l4
 ARCHS += efm32g efm32gg efm32lg efm32tg
 ARCHS += lm3s lm4f
+ARCHS += k20dx
 ARCHS += lpc13xx lpc17xx lpc43xx
 ARCHS += sam3a sam3n sam3s sam3u sam3x
 ARCHS += vf6xx

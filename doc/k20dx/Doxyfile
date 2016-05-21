@@ -1,0 +1,31 @@
+# HTML Documentation for K20DX code level
+
+# 21 may 2016
+# (C) Gwenhael Goavec-Merou <gwenhael.goavec-merou@trabucayre.com>
+
+#---------------------------------------------------------------------------
+# Common Include File
+#---------------------------------------------------------------------------
+
+@INCLUDE 	       = ../Doxyfile_common
+
+#---------------------------------------------------------------------------
+# Local settings
+#---------------------------------------------------------------------------
+
+WARN_LOGFILE           = doxygen_k20dx.log
+
+INPUT                  = ../../include/libopencm3/license.dox \
+                         ../../include/libopencm3/k20dx
+
+INPUT                 += ../../lib/k20dx
+
+EXCLUDE                = 
+
+LAYOUT_FILE 	       = DoxygenLayout_k20dx.xml
+
+GENERATE_TAGFILE       = k20dx.tag
+
+ENABLE_PREPROCESSING    = YES
+
+
