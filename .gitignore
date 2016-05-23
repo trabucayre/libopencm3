@@ -25,6 +25,7 @@ include/libopencm3/**/**/nvic.h
 lib/**/vector_nvic.c
 lib/**/**/vector_nvic.c
 include/libopencmsis/efm32/
+include/libopencmsis/k20dx/
 include/libopencmsis/lm3s/
 include/libopencmsis/lpc13xx/
 include/libopencmsis/lpc17xx/
