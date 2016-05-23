@@ -35,7 +35,7 @@ TGT_CFLAGS	= -Os \
 		  -ffunction-sections -fdata-sections -MD -DK20DX
 TGT_CFLAGS      += $(DEBUG_FLAGS)
 ARFLAGS		= rcs
-OBJS		= gpio.o vector.o
+OBJS		= gpio.o vector.o sim.o
 
 VPATH += ../cm3
 
