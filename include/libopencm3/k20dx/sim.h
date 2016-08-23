@@ -196,6 +196,23 @@ LGPL License Terms @ref lgpl_license
 #define SIM_CLKDIV2_USBFRAC_SHIFT	0
 #define SIM_CLKDIV2_USBFRAC_MASK	(0x1 << 0)
 
+static inline void set_outdiv1_div(uint8_t div)
+{
+	SIM_CLKDIV1 = (SIM_CLKDIV1 & ~SIM_CLKDIV1_OUTDIV1(SIM_CLKDIV1_OUTDIV_MASK))
+		| SIM_CLKDIV1_OUTDIV1(div);
+}
+
+static inline void set_outdiv2_div(uint8_t div)
+{
+	SIM_CLKDIV1 = (SIM_CLKDIV1 & ~SIM_CLKDIV1_OUTDIV2(SIM_CLKDIV1_OUTDIV_MASK))
+		| SIM_CLKDIV1_OUTDIV2(div);
+}
+
+static inline void set_outdiv4_div(uint8_t div)
+{
+	SIM_CLKDIV1 = (SIM_CLKDIV1 & ~SIM_CLKDIV1_OUTDIV4(SIM_CLKDIV1_OUTDIV_MASK))
+		| SIM_CLKDIV1_OUTDIV4(div);
+}
 
 /* FCFG1: Flash Configuration Register 1 */
 #define SIM_FCFG2_NVMSIZE_SHIFT		28
