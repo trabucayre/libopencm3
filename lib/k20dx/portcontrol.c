@@ -47,8 +47,8 @@ void port_set_mode(uint32_t portctl, uint16_t mode, uint32_t gpios)
 	 * in the same mode more than one Pin mux, drive, drain,
 	 * filter rate and pull
 	 */
-	uint16_t gpio_h = gpios & 0xffff0000;
-	uint16_t gpio_l = gpios & 0xffff;
+	uint32_t gpio_h = gpios & 0xffff0000;
+	uint32_t gpio_l = gpios & 0xffff;
 	if (gpio_h)
 		PORTn_GPCHR(portctl) = gpio_h | mode;
 	if (gpio_l)
